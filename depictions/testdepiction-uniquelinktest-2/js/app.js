@@ -9,8 +9,11 @@ if (document.location.search.indexOf('theme=') >= 0) {
 
 // Init App
 var app = new Framework7({
-  id: 'io.framework7.testapp',
   root: '#app',
-  theme: theme,
+  theme: 'auto',
   routes: routes,
+});
+
+app.views.create('.view-main',{
+  url:'/'
 });

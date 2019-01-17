@@ -3,7 +3,6 @@ var routes = [
   {
     path: '/',
     componentUrl: './testdepiction.html',
-    name: 'testdepicunique',
     routes: [
       {
         path: 'changes/',
