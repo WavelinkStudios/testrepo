@@ -3,165 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- iOS Webapp Compatibility -->
+  <meta name="apple-mobile-web-app-capable" content="yes" theme="ios">
+  <!-- iOS Webapp Statusbar -->
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <!-- Webpage Layout Theme -->
   <meta name="theme-color" content="#2196f3">
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <!-- Webpage Title -->
   <title>Wavelink Studios</title>
+  <!-- CSS Links -->
   <link rel="stylesheet" href="css/framework7.min.css">
   <link rel="stylesheet" href="css/app.css">
+  <!-- Homescreen Webapp Icon -->
   <link rel="apple-touch-icon" href="img/f7-icon-square.png">
   <link rel="icon" href="img/f7-icon.png">
 </head>
 <body>
   <div id="app">
+    <!-- Initialise Webapp Statusbar -->
     <div class="statusbar"></div>
-
+    <!-- Not entirely sure about this one but it appears to be trying to create the body of the site for ios devices -->
     <div class="view view-main view-init ios-edges" data-url="/">
       <div class="page">
         <div class="navbar">
           <div class="navbar-inner">
+            <!-- Navbar Title -->
             <div class="title sliding">Wavelink Studios</div>
           </div>
         </div>
         <div class="page-content">
-  
-  <div class="block-title">Description</div>
-    <div class="block block-strong">
-      <p>Welcome to the offial test repo that isn’t even actually live yet. If this text isn’t slightly updated for the public launch then please let us know so that we may fix it asap. You will find all of the Cydia packages for Wavelink Studios here. You can even add the repo straight to Cydia with the button below. Even if your device isn’t jailbroken you can see all the packages below as well to see what is new packages and updates are happening. Featured packages are listed on the home page and all packages can be seen underneath them on their own page. Thank you for checking out our repo and packages.</p>
-    </div>
-    
-    <div class="list inset">
-      <ul>
-        <li><a href="#" class="list-button item-link"> Add to Cydia</a></li>
-      </ul>
-    </div>
-  
-          <div class="block-title">Featured Packages</div>
-          <div class="list components-list">
-            <ul>
-              <li>
-                <a class="item-content item-link" href="/bidsxi/">
-                  <div class="item-media"><img src="img/tempPackIcon.jpg" width="30" height="30" style="border-radius:20%;" /></div>
-                  <div class="item-inner">
-                    <div class="item-title">BundleIDsXI</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="https://wavelinkstudios.github.io/testrepo/depictions/testdepiction/testdepiction.html">
-                  <div class="item-media"><img src="img/tempPackIcon.jpg" width="30" height="30" style="border-radius:20%;" /></div>
-                  <div class="item-inner">
-                    <div class="item-title">
-                    Test Package
+          <!-- Description Content Block -->
+          <div class="block-title">Description</div>
+            <div class="block block-strong">
+              <p>Welcome to the official test repo that isn’t even actually live yet. If this text isn’t slightly updated for the public launch then please let us know so that we may fix it asap. You will find all of the Cydia packages for Wavelink Studios here. You can even add the repo straight to Cydia with the button below. Even if your device isn’t jailbroken you can see all the packages below as well to see what is new packages and updates are happening. Featured packages are listed on the home page and all packages can be seen underneath them on their own page. Thank you for checking out our repo and packages.</p>
+            </div>
+            <!-- Add to Cydia Button -->
+            <div class="list inset">
+              <ul>
+                <li><a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://wavelinkstudios.github.io/repo/" class="list-button item-link external">Add to Cydia</a></li>
+              </ul>
+            </div>
+            <!-- Featured Packages List Block -->
+            <div class="block-title">Featured Packages</div>
+            <div class="list featuredpackages-list">
+              <ul>
+                <li>
+                  <a class="item-content item-link" href="/bidsxi/">
+                    <div class="item-media"><img src="img/tempPackIcon.jpg" width="30" height="30" style="border-radius:20%;" /></div>
+                    <div class="item-inner">
+                      <div class="item-title">BundleIDsXI</div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/exampledepiction/">
-                  <div class="item-media"><img src="img/tempPackIcon.jpg" width="30" height="30" style="border-radius:20%;" /></div>
-                  <div class="item-inner">
-                    <div class="item-title">Example Package</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/allpackages/">
-                <div class="item-media"><i class="icon f7-icons">collection</i></div>
-                  <div class="item-inner">
-                    <div class="item-title">All Packages</div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-<!-- Footer links -->
-    <div class="block-title">Links</div>
-    <div class="list">
-      <ul>
-        <!-- Twitter Link -->
-        <li>
-          <a href="https://www.twitter.com/wavelinkstudios" class="item-link item-content external">
-            <div class="item-media"><i class="icon f7-icons">social_twitter_fill</i></div>
-            <div class="item-inner">
-              <div class="item-title">Wavelink Studios</div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-content item-link" href="/testdepiction/">
+                    <div class="item-media"><img src="img/tempPackIcon.jpg" width="30" height="30" style="border-radius:20%;" /></div>
+                    <div class="item-inner">
+                      <div class="item-title">Test Package</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-content item-link" href="/exampledepiction/">
+                    <div class="item-media"><img src="img/tempPackIcon.jpg" width="30" height="30" style="border-radius:20%;" /></div>
+                    <div class="item-inner">
+                      <div class="item-title">Example Package</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-content item-link" href="/allpackages/">
+                    <div class="item-media"><i class="icon f7-icons">collection</i></div>
+                    <div class="item-inner">
+                      <div class="item-title">All Packages</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </a>
-        </li>
-        <!-- Source Code Link -->
-        <li>
-          <a href="https://github.com/tdadvocate" class="item-link item-content external">
-            <div class="item-media"><i class="icon f7-icons">social_github</i></div>
-            <div class="item-inner">
-              <div class="item-title">Source Code</div>
+            <!-- Footer links -->
+            <div class="block-title">Links</div>
+            <div class="list">
+              <ul>
+                <!-- Twitter Link -->
+                <li>
+                  <a href="https://www.twitter.com/wavelinkstudios" class="item-link item-content external">
+                    <div class="item-media"><i class="icon f7-icons">social_twitter_fill</i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Wavelink Studios</div>
+                    </div>
+                  </a>
+                </li>
+                <!-- Source Code Link -->
+                <li>
+                  <a href="https://github.com/tdadvocate" class="item-link item-content external">
+                    <div class="item-media"><i class="icon f7-icons">social_github</i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Source Code</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-          <div class="block-title">Themes</div>
-          <div class="list links-list">
-            <ul>
-              <li>
-                <a href="/color-themes/">Color Themes</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="block-title">Layout Themes</div>
-          <div class="block">
-            <p>Framework7 comes with 2 main layout themes: Light (default) and Dark:</p>
-            <div class="row">
-              <div class="col-50 bg-color-white" @click="setLayoutTheme('light')" style="cursor: pointer; padding: 30px; border: 1px solid rgba(0,0,0,0.1)"></div>
-              <div class="col-50 bg-color-black" @click="setLayoutTheme('dark')"  style="cursor: pointer; padding: 30px; border: 1px solid rgba(255,255,255,0.1)"></div>
+            <!-- Stock F7 Themes Page -->
+            <div class="block-title">Site Theme</div>
+            <div class="list links-list">
+              <ul>
+                <li>
+                  <a href="/color-themes/">Color Settings</a>
+                </li>
+              </ul>
             </div>
-          </div>
-          
-<style scoped>
-  .button {
-    margin-bottom: 1em;
-    text-transform: capitalize;
-  }
-</style>
-<script>
-  return {
-    data: function () {
-      var colors = [
-        'red',
-        'green',
-        'blue',
-        'pink',
-        'yellow',
-        'orange',
-        'gray',
-        'black',
-      ];
-      return {
-        colors: colors,
-        colorsAmount: colors.length,
-      };
-    },
-    methods: {
-      setLayoutTheme: function (theme) {
-        var self = this;
-        var app = self.$app;
-        app.root.removeClass('theme-dark theme-light').addClass('theme-' + theme);
-      },
-      setColorTheme: function (color) {
-        var self = this;
-        var app = self.$app;
-        var currentColorClass = app.root[0].className.match(/color-theme-([a-z]*)/);
-        if (currentColorClass) app.root.removeClass(currentColorClass[0])
-          app.root.addClass('color-theme-' + color);
-      },
-    }
-  }
-</script>
-          
-          
         </div>
       </div>
     </div>

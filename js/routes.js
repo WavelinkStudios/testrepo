@@ -2,19 +2,15 @@ var routes = [
   // Index page
   {
     path: '/',
-    url: './index.html',
+    componentUrl: './index.html',
     name: 'home',
   },
   // BIDsXI depiction
   {
     path: '/bidsxi/',
-    url: './depictions/com.wavelink.bundleidsxi/bidsxi.html',
+    componentUrl: './depictions/com.wavelink.bundleidsxi/bidsxi.html',
     name: 'bidsxi',
     routes: [
-      {
-        path: 'sscf/',
-        url: './depictions/com.wavelink.bundleidsxi/screenshotsCoverFlow.html',
-      },
       {
         path: 'changes/',
         url: './depictions/com.wavelink.bundleidsxi/changelog.html',
@@ -24,13 +20,9 @@ var routes = [
   // Test Package depiction
   {
     path: '/testdepiction/',
-    url: './depictions/testdepiction/testdepiction.html',
+    componentUrl: './depictions/testdepiction/testdepiction.html',
     name: 'testdepic',
     routes: [
-      {
-        path: 'screens/',
-        url: './depictions/testdepiction/screenshots.html',
-      },
       {
         path: 'changes/',
         url: './depictions/testdepiction/changelog.html',
@@ -40,13 +32,9 @@ var routes = [
   // Example Package depiction
   {
     path: '/exampledepiction/',
-    url: './depictions/exampledepiction/exampledepiction.html',
+    componentUrl: './depictions/exampledepiction/exampledepiction.html',
     name: 'exampdepic',
     routes: [
-      {
-        path: 'screens/',
-        url: './depictions/exampledepiction/screenshots.html',
-      },
       {
         path: 'changes/',
         url: './depictions/exampledepiction/changelog.html',
